@@ -386,7 +386,7 @@ body {
     color: #6d4c41;
   }
   25% {
-    color: #8d6e63;
+    color: #a89f91;
   }
   50% {
     color: #b56576;
@@ -408,6 +408,8 @@ body {
   #text {
     padding: 10px;
     font-size: 14px;
+    width: 80%;
+    left: 10%;
   }
 
   #text > h1 {
@@ -419,10 +421,15 @@ body {
   }
 
   #page > img {
-    width: 100%;
-    right: 0;
+    width: 80%;
+    right: 10%;
     top: 50%;
-    visibility: hidden;
+    visibility: visible;
+  }
+
+  #buttons {
+    width: 80%;
+    left: 10%;
   }
 
   #buttons > button {
@@ -432,8 +439,8 @@ body {
   }
 
   #page1 > #left {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .box {
@@ -459,13 +466,15 @@ body {
   #project {
     flex-direction: column;
     height: auto;
-    padding: 0 10px;
+    width: 90%;
+    left: 5%;
   }
 
   #text4 {
     width: 100%;
     text-align: center;
     top: 0;
+    left: 0;
   }
 
   #text4 > h1 {
@@ -484,4 +493,5 @@ body {
     font-size: 14px;
   }
 }
+
 
