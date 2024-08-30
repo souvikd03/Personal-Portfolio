@@ -1,10 +1,10 @@
-/* Basic Reset and Font Styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: montserrat;
+  font-family: Montserrat, sans-serif;
 }
+
 html,
 body {
   height: 100%;
@@ -389,255 +389,77 @@ body {
     color: #8d6e63;
   }
   50% {
-    color: #a1887f;
+    color: #b56576;
   }
   75% {
-    color: #8d6e63;
+    color: #7c5d49;
   }
   100% {
     color: #6d4c41;
   }
 }
 
-.copyright {
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin: 20px 0 0;
-  padding: 8px 0;
-}
-
-/* Miscellaneous */
-.nav-item > a {
-  color: #6d4c41 !important;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 7px 20px;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.nav-item {
-  border: none;
-  display: inline;
-  font-size: 1.2rem;
-}
-
-/* Responsive Design */
-
-/* For screens smaller than 1200px (e.g., tablets) */
-@media (max-width: 1199px) {
-  #page {
-    padding: 20px;
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    font-size: 12px;
   }
 
   #text {
-    width: 100%;
-    left: 0;
-    top: 10%;
-    scale: 1;
+    padding: 10px;
+    font-size: 14px;
   }
 
-  #page > img {
-    width: 70%;
-    right: 15%;
-    top: 40%;
+  #text > h1 {
+    font-size: 32px;
   }
 
-  #page1 {
-    padding: 30px 0;
-  }
-
-  #page1 > #left {
-    width: 100%;
-    position: static;
-    transform: none;
-    margin-bottom: 20px;
-  }
-
-  #text1 {
-    width: 100%;
-    margin: 0;
-    height: auto;
-    position: static;
-  }
-
-  #text1 > h1 {
-    font-size: 48px;
-  }
-
-  #text1 > h4 {
-    font-size: 24px;
-  }
-
-  .projects {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  #project {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .p1 img,
-  .p2 img,
-  .p3 img {
-    width: 100%;
-    height: auto;
-  }
-
-  #text4 {
-    width: 100%;
-    text-align: center;
-    left: 0;
-    top: 10%;
-  }
-
-  #text4 > h1 {
-    font-size: 36px;
-  }
-
-  .end {
-    padding: 30px 20px;
-  }
-}
-
-/* For screens smaller than 992px (e.g., mobile phones) */
-@media (max-width: 991px) {
-  .navbar-nav .nav-link {
+  #text > h4 {
     font-size: 16px;
   }
 
-  #text {
-    padding: 20px;
-    width: 100%;
-    position: static;
-    top: 0;
-    left: 0;
-    text-align: center;
-  }
-
   #page > img {
-    width: 80%;
-    right: 10%;
+    width: 100%;
+    right: 0;
+    top: 50%;
     visibility: hidden;
   }
 
   #buttons > button {
-    width: 50%;
-    font-size: 18px;
-    margin-right: 40px;
-  }
-
-  #page1 {
-    padding: 20px 0;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
   }
 
   #page1 > #left {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .box {
     height: auto;
-    margin-bottom: 20px;
-  }
-
-  #text1 {
-    width: 100%;
-    margin: 0;
+    padding: 15px;
+    margin-bottom: 10px;
   }
 
   #text1 > h1 {
-    font-size: 36px;
-  }
-
-  #text1 > h4 {
-    font-size: 20px;
-  }
-
-  #page2 {
-    margin-top: 850px;
-  }
-
-  .projects {
-    width: 100%;
-    height: auto;
-  }
-
-  #project {
-    flex-direction: column;
-    height: auto;
-  }
-
-  #text4 {
-    width: 100%;
-    text-align: center;
-    top: 0;
-  }
-
-  #text4 > h1 {
     font-size: 28px;
   }
 
-  .end {
-    padding: 20px 10px;
-  }
-
-  .end h2 {
-    font-size: 32px;
-  }
-
-  .end p {
-    font-size: 18px;
-  }
-}
-
-/* For screens smaller than 576px (e.g., very small devices) */
-@media (max-width: 575px) {
-  .navbar-nav .nav-link {
-    font-size: 14px;
-  }
-
-  #text {
-    padding: 15px;
-    font-size: 16px;
-  }
-
-  #page > img {
-    width: 90%;
-    right: 5%;
-  }
-
-  #buttons > button {
-    font-size: 16px;
-  }
-
-  #page1 {
-    padding: 10px 0;
-  }
-
-  .box {
-    padding: 15px;
-  }
-
-  #text1 > h1 {
-    font-size: 30px;
-  }
-
   #text1 > h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .projects {
     width: 100%;
+    margin-bottom: 10px;
     height: auto;
   }
 
   #project {
     flex-direction: column;
     height: auto;
+    padding: 0 10px;
   }
 
   #text4 {
@@ -651,14 +473,15 @@ body {
   }
 
   .end {
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
 
   .end h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .end p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
+
